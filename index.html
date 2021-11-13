@@ -1,64 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Music Player</title>
-     <link rel="stylesheet" href="src/css/styles.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-</head>
-<body>
-     <div class="preloader">
-          <div class="container">
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
-            <span class="circle"></span>
-          </div>
-              <p>LOADING...</p>
-        </div>
-     <main>
-          <div class="m-container">
-            <img class="m-card" onclick="playSong('sounds/candyland.mp3');" ondblclick="audio.pause()" src="https://i1.sndcdn.com/artworks-000656203957-d9omlw-t500x500.jpg" alt="candyland">
-            <div class="m-t">
-              Candyland
-            </div>
-          </div>
-          <div class="m-container">
-            <img class="m-card" onclick="playSong('sounds/colors.mp3');" ondblclick="audio.pause()" src="http://tobu.io/img/covers/tobu_colors_081503868314.jpg" alt="colors">
-            <div class="m-t">
-              Colors
-            </div>
-          </div>
-          <div class="m-container">
-            <img class="m-card" onclick="playSong('sounds/hope.mp3');" ondblclick="audio.pause()" src="https://lastfm.freetls.fastly.net/i/u/770x0/b05eaff800c2ed0ee315c54b3338e261.jpg" alt="Hope">
-            <div class="m-t">
-              Hope
-            </div>
-          </div>
-          <div class="m-container">
-            <img class="m-card" onclick="playSong('sounds/cacao.mp3');" ondblclick="audio.pause()" src="https://i1.sndcdn.com/artworks-000159072546-twrce0-t500x500.jpg" alt="Cacao">
-            <div class="m-t">
-              Cacao
-            </div>
-          </div>
-          <div class="m-container">
-            <img class="m-card" onclick="playSong('sounds/louder_now.mp3');" ondblclick="audio.pause()" src="https://i1.sndcdn.com/artworks-YxGUGES6DrzzCUGx-Gx32ZQ-t500x500.jpg" alt="Louder Now">
-            <div class="m-t">
-              Louder Now
-            </div>
-          </div>
-          <div class="m-container">
-            <img class="m-card" onclick="playSong('sounds/lets_go.mp3');" ondblclick="audio.pause()" src="https://i1.sndcdn.com/artworks-fZ7qMxP2oJRxtFaR-NW2WwQ-t500x500.jpg" alt="Lets Go">
-            <div class="m-t">
-              Lets Go
-            </div>
-          </div>
-        </main>
-     
-        <script src="src/js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="container">
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+      </div>
+      <p>LOADING...</p>
+    </div>
+    <main>
+      <div class="m-container">
+        <img
+          class="m-card"
+          onclick="playSong('sounds/candyland.mp3');"
+          ondblclick="audio.pause()"
+          src="https://i1.sndcdn.com/artworks-000656203957-d9omlw-t500x500.jpg"
+          alt="candyland"
+        />
+        <div class="m-t">Candyland</div>
+      </div>
+      <div class="m-container">
+        <img
+          class="m-card"
+          onclick="playSong('sounds/colors.mp3');"
+          ondblclick="audio.pause()"
+          src="http://tobu.io/img/covers/tobu_colors_081503868314.jpg"
+          alt="colors"
+        />
+        <div class="m-t">Colors</div>
+      </div>
+      <div class="m-container">
+        <img
+          class="m-card"
+          onclick="playSong('sounds/hope.mp3');"
+          ondblclick="audio.pause()"
+          src="https://lastfm.freetls.fastly.net/i/u/770x0/b05eaff800c2ed0ee315c54b3338e261.jpg"
+          alt="Hope"
+        />
+        <div class="m-t">Hope</div>
+      </div>
+      <div class="m-container">
+        <img
+          class="m-card"
+          onclick="playSong('sounds/cacao.mp3');"
+          ondblclick="audio.pause()"
+          src="https://i1.sndcdn.com/artworks-000159072546-twrce0-t500x500.jpg"
+          alt="Cacao"
+        />
+        <div class="m-t">Cacao</div>
+      </div>
+      <div class="m-container">
+        <img
+          class="m-card"
+          onclick="playSong('sounds/louder_now.mp3');"
+          ondblclick="audio.pause()"
+          src="https://i1.sndcdn.com/artworks-YxGUGES6DrzzCUGx-Gx32ZQ-t500x500.jpg"
+          alt="Louder Now"
+        />
+        <div class="m-t">Louder Now</div>
+      </div>
+      <div class="m-container">
+        <img
+          class="m-card"
+          onclick="playSong('sounds/lets_go.mp3');"
+          ondblclick="audio.pause()"
+          src="https://i1.sndcdn.com/artworks-fZ7qMxP2oJRxtFaR-NW2WwQ-t500x500.jpg"
+          alt="Lets Go"
+        />
+        <div class="m-t">Lets Go</div>
+      </div>
+    </main>
+
+    <script src="src/js/script.js"></script>
+  </body>
 </html>
