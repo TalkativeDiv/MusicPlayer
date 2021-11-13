@@ -11,6 +11,7 @@
   -o-transition: var(--transition);
   transition: var(--transition);
   border: none;
+  overflow: hidden;
 }
 
 body {
