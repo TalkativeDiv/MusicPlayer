@@ -1,0 +1,131 @@
+* {
+     transition: all 0.5s ease-in-out;
+     -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+     -ms-transition: all 0.5s ease-in-out;
+     -o-transition: all 0.5s ease-in-out;
+     border: none;
+     overflow: hidden;
+     transition: all 0.5s ease-in-out;
+   }
+   
+   body {
+     background: #dfe7ef;
+     font-family: "Poppins", sans-serif;
+     color: #71829e;
+   }
+   
+   main {
+     width: 100vw;
+     height: 100vh;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     /*grid-auto-rows: minmax(150px, auto);*/
+     grid-template-rows: repeat(3, minmax(150px, auto));
+     /*grid-row-gap: 10px;
+          grid-column-gap: 10px;*/
+     grid-row-gap: 10px;
+   }
+   
+   .m-container {
+     text-align: center;
+   }
+   
+   .m-card {
+     width: 15rem;
+     box-shadow: 0px 10px 40px 0px rgba(76, 70, 124, 0.5);
+     border-radius: 1rem;
+   }
+   .m-card:hover {
+     transform: scale(1.05);
+     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+   }
+
+   p {
+     font-size: 1.25rem;
+     color: #71829e;
+   }
+   
+   .preloader {
+     position: fixed;
+     top: 0;
+     left: 0;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        background: #dfe7ef;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 1rem;
+   }
+   .hidden {
+     display: none;
+   }
+   .container {
+     height: 15px;
+     width: 105px;
+     display: flex;
+     position: relative;
+   }
+   .container .circle {
+     width: 15px;
+     height: 15px;
+     border-radius: 50%;
+     background-color: #71829e;
+     animation: move 500ms linear 0ms infinite;
+     margin-right: 30px;
+   }
+   .container .circle:first-child {
+     position: absolute;
+     top: 0;
+     left: 0;
+     animation: grow 500ms linear 0ms infinite;
+   }
+   .container .circle:last-child {
+     position: absolute;
+     top: 0;
+     right: 0;
+     margin-right: 0;
+     animation: grow 500ms linear 0s infinite reverse;
+   }
+   
+   @keyframes grow {
+     from {
+       transform: scale(0, 0);
+       opacity: 0;
+     }
+     to {
+       transform: scale(1, 1);
+       opacity: 1;
+     }
+   }
+   @keyframes move {
+     from {
+       transform: translateX(0px);
+     }
+     to {
+       transform: translateX(45px);
+     }
+   }
+
+   .lnk-gh{
+     position: absolute;
+     right: 40px;
+     bottom: 50px;
+     text-decoration: none;
+     padding: 15px 25px;
+     border-radius: 4px;
+     box-shadow: 0px 4px 30px -6px rgba(36, 52, 70, 0.65);
+     background: #24292e;
+     color: #fff;
+     font-weight: bold;
+     letter-spacing: 1px;
+     font-size: 16px;
+     transition: all 0.3s ease-in-out;
+   }
+     .lnk-gh:hover{
+          transform: scale(1.1);
+      box-shadow: 0px 17px 20px -6px rgba(36, 52, 70, 0.36);
+     }
